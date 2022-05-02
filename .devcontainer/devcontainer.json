@@ -2,4 +2,5 @@
     "build": {
         "dockerfile": "Dockerfile",
     },
+    "containerUser": "rajveer"
 }
