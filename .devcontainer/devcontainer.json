@@ -3,5 +3,5 @@
         "dockerfile": "./Dockerfile",
         "context": "."
     },
-    "remoteUser": "rajveer"
+    "remoteUser": "vscode"
 }

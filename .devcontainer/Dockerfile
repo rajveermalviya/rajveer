@@ -3,5 +3,6 @@ FROM fedora:36
 RUN echo 'max_parallel_downloads=20' | tee -a /etc/dnf/dnf.conf \
     && dnf update --refresh -y \
     && dnf install -y vim htop fish git curl cmake ninja-build meson clang \
-    && useradd --create-home -s /bin/fish rajveer \
-    && echo "rajveer ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/rajveer
+    && groupadd --gid 1000 vscode \
+    && useradd -s /bin/fish --uid 1000 --gid vscode -m vscode \
+    && echo "vscode ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/vscode
