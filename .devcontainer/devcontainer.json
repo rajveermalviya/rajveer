@@ -1,7 +1,15 @@
 {
-    "build": {
-        "dockerfile": "./Dockerfile",
-        "context": "."
-    },
-    "remoteUser": "vscode"
+    "image": "debian:bullseye",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:1": {
+            "version": "latest",
+            "installZsh": false,
+            "installOhMyZsh": false,
+            "upgradePackages": true
+        },
+        "ghcr.io/devcontainers/features/docker-in-docker:1": {
+            "version": "latest",
+            "moby": true
+        }
+    }
 }
