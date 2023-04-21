@@ -1,15 +1,17 @@
 {
     "image": "debian:sid",
     "features": {
-        "ghcr.io/devcontainers/features/common-utils:1": {
-            "version": "latest",
+        "ghcr.io/devcontainers/features/common-utils:2": {
             "installZsh": false,
             "installOhMyZsh": false,
-            "upgradePackages": true
+            "configureZshAsDefaultShell": false,
+            "upgradePackages": true,
+            "nonFreePackages": true
         },
         "ghcr.io/devcontainers/features/sshd:1": {
             "version": "latest"
-        }
+        },
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
     "remoteUser": "vscode"
 }
