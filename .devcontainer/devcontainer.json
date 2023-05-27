@@ -1,5 +1,5 @@
 {
-    "image": "debian:sid",
+    "image": "debian",
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {
             "installZsh": false,
@@ -8,9 +8,7 @@
             "upgradePackages": true,
             "nonFreePackages": true
         },
-        "ghcr.io/devcontainers/features/sshd:1": {
-            "version": "latest"
-        },
+        "ghcr.io/devcontainers/features/sshd:1": {},
         "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
     "remoteUser": "vscode"
