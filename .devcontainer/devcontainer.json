@@ -1,5 +1,7 @@
 {
     "image": "debian:11",
+    "privileged": true,
+    "remoteUser": "vscode",
     "features": {
         "ghcr.io/devcontainers/features/common-utils:2": {
             "installZsh": false,
@@ -13,7 +15,5 @@
     }
     // "build": {
     //     "dockerfile": "Dockerfile"
-    // },
-    // "privileged": true,
-    // "remoteUser": "vscode"
+    // }
 }
