@@ -1,5 +1,5 @@
 {
-    "image": "debian:11",
+    "image": "fedora:44",
     "privileged": true,
     "remoteUser": "vscode",
     "features": {
@@ -9,11 +9,6 @@
             "configureZshAsDefaultShell": false,
             "upgradePackages": true,
             "nonFreePackages": true
-        },
-        "ghcr.io/devcontainers/features/sshd:1": {},
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+        }
     }
-    // "build": {
-    //     "dockerfile": "Dockerfile"
-    // }
 }
